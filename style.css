@@ -1,0 +1,519 @@
+
+
+/*ESTILO GENERAL DE LA LANDING PAGE*/
+
+    body {
+        background-color: #241711;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        box-sizing: border-box;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.light-mode {
+        background-color: #fff;
+        color: #000;
+    }
+
+    body.light-mode .boton{
+        background-color: #000;
+        color: #fff;
+    }
+
+    body.light-mode #eternalsunshine{
+        border: 0.2px solid #000;
+    }
+
+    body.light-mode #positions{
+        border: 0.2px solid #000;
+    }
+
+    body.light-mode #thankunext {
+        border: 0.2px solid #000;
+    }
+
+    body.light-mode #cancionAPIS #searchButton {
+        background-color: #000;
+        color: #fff;
+
+    }
+
+    body.light-mode .section #contenido {
+        color: #fff;
+    }
+
+    body.light-mode #modeToggle {
+        color: black;
+    }
+
+        /* ESTILO DIV DE CARGA*/
+
+        #carga {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.719);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .circulo {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #mensajeBienvenida {
+            display: none; /* Inicialmente oculto */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #1f130f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            text-align: center;
+            color: white;
+        }
+
+        #mensajeBienvenida .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+        }
+
+        #popupAnuncio {
+            display: none; /* Inicialmente oculto */
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1f130f;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1002;
+            width: 500px;
+        }
+
+        #popupAnuncio .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+        }
+
+        #popupAnuncio #popupImagen {
+            width: 100%;
+            height: 420px;
+            background-image: url(https://www.neo2.com/wp-content/uploads/2023/04/ariana-grande-rem-beauty_03.jpg);
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+
+        #popupAnuncio #popupImagen #popupTexto {
+            width: 40%;
+            margin-left: 22px;
+            margin-top: 10%;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        nav .brand {
+            margin-left: 8%;
+            
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: rgb(210, 208, 208);
+
+        }
+
+          /* ESTILO DE LA SECCION 1 */
+
+        .fondo-imagen {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://www.rollingstone.com/wp-content/uploads/2024/01/ariana-grande-new-press.jpg?crop=0px%2C14px%2C1800px%2C1014px&resize=1600%2C900); /* Ruta a tu imagen */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        .fondo-imagen #contenido {
+            height: 50%;
+            margin-left: 8%;
+            margin-top: 18%;
+            width: 30%;
+        }
+
+        .fondo-imagen #contenido h1{
+            font-size: 28px;
+
+        }
+        .fondo-imagen #contenido p{
+            font-weight: bold;
+        }
+
+        /*ESTILO BOTON CAMBIO DE COLOR*/
+
+        #modeToggle {
+            margin-left: 95%;
+            background: transparent;
+            color: white;
+            border: none;
+        }
+
+
+       
+
+
+
+        /* ESTILO DE LA SECCION 2 */
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .text-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .text-section .text {
+            flex: 1;
+            padding-right: 1rem;
+        }
+
+        .text-section .image {
+            flex: 1;
+        }
+
+        .text-section img {
+            width: 100%;
+            height: auto;
+        }
+
+       #imagenVideoClip{
+        border: 0.5px solid white;
+        border-radius: 12px;
+       }
+
+       /*ESTILO DEL DIV DEL AJAX*/
+
+    
+
+       #eternalsunshine, #positions, #thankunext {
+        padding: 2%;
+        background: transparent;
+        display: inline-block;
+        border: 0.2px solid #ddd;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        width: 14%;
+        margin-left: 14%;
+    }
+
+    #eternalsunshine:hover, #positions:hover, #thankunext:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    #contentContainer {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        padding: 20px;
+        background-color:none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s;
+    }
+
+    /* ESTILO DE LAS LYRICS DE APIS*/
+
+    #cancionAPIS {
+        margin: auto;
+    }
+
+    #cancionAPIS  h2{
+        margin-left: 42%;
+       
+
+    }
+
+    #cancionAPIS  input {
+        margin-left: 40%;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 13px;
+        width: 10%;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        
+
+    }
+    #cancionAPIS  #searchButton{
+        padding: 1%;
+        background-color: white;
+        display: inline-block;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        width: 8%;
+
+    }
+
+    #cancionAPIS #searchButton:hover{
+        background-color: #cdcfd1;
+
+    }
+
+    #cancionAPIS  #lyrics {
+        font-family: 'Courier New', Courier, monospace;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        
+    }
+
+
+        /* ESTILO DE LA SECCION 3- CARTAS DEL HOME */
+        #cartasHome {
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            flex-wrap: wrap;
+        }
+
+        #cartaHome1, #cartaHome2, #cartaHome3, #cartaHome4 {
+            border: 0.2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 20%;
+            height: 440px;
+            transition: transform 0.3s ease;
+        }
+        #cartaHome1:hover, #cartaHome2:hover, #cartaHome3:hover, #cartaHome4:hover {
+            transform: scale(1.1);
+        }
+
+        #cartaHome1 img, #cartaHome2 img, #cartaHome3 img, #cartaHome4 img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .boton:hover {
+            background-color: #cdcfd1;
+        }
+ 
+
+        /* ESTILO DEL FOOTER */
+        footer {
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 4px;
+        }
+
+       /* footer #redes ul {
+            list-style: none;
+        }
+
+
+        footer #redes ul li {
+            color: white;
+            text-decoration: none;
+        }*/
+
+        footer ul li a:hover {
+            color: rgb(210, 208, 208);
+
+        }
+
+
+/*ESTILO MENSAJE DE COOKIES*/
+
+.mensaje-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none; /* Ocultarlo por defecto */
+}
+
+.mensaje-cookies button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.mensaje-cookies button:hover {
+    background-color: #45a049;
+}
+
+  
+
+
+
+
+/*ESTILO CARDS DE LA SECCION PRODUCTOS (JSON)*/
+
+#productosJSONH3 {
+    margin: auto;
+    width: 90px;
+}
+
+#productosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.cartasProductos {
+    border: 0.3px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 20%;  
+    height: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+.cartasProductos img {
+    width: 100%;
+    height: 55%;
+}
+
+.cartasProductos h3 {
+    margin: 0 0;
+    font-size: 75%;
+}
+
+.cartasProductos p {
+    margin: 2% 0;
+    color: #555;
+    font-size: 50%;
+}
+
+.cartasProductos .precio {
+    font-weight: bold;
+    color: white;
+    font-size: 110%;
+}
+
+.cartasProductos .stock {
+    color: #2ecc71;
+    font-size: 70%;
+} 
+
+@media (max-width: 645px) {
+    .cartasProductos {
+        height: 60%;
+    }
+    .cartasProductos img{
+        width: 100%;
+        height: 80%;
+    }
+    .cartasProductos p {
+        display: none;
+    }
+    .cartasProductos .stock {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .cartasProductos h3 {
+        display: none;
+    }
+    .cartasProductos img{
+        width: 100%;
+        height: 100%;
+    }
+}

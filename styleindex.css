@@ -1,0 +1,59 @@
+
+body {
+            margin: 0;
+            overflow: hidden; /* Asegura que no haya scroll por la imagen de fondo */
+            position: relative; /* Necesario para posicionar el pseudoelemento */
+            height: 100vh; /* Asegura que el body tenga la altura del viewport */
+            background-image: url("https://image.europafm.com/clipping/cmsimages01/2024/03/08/C5468015-E008-4C38-A4F5-FFEC1B565A0D/ariana-grande-abre-corazon-eternal-sunshine-apoteosico-regreso-musica_98.jpg?crop=960,540,x0,y210&width=1900&height=1069&optimize=low&format=webply");
+            background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-position: center; /* Centra la imagen en el fondo */
+            font-family: Arial, sans-serif;
+            color: #e0e4e8;
+           
+        }
+#logoInicio{
+    margin-left: 46%;
+    width: 120px;
+}
+
+form{
+            background-color: #281914; /* Fondo negro para el formulario */
+            border-radius: 8px; /* Bordes redondeados */
+            padding: 20px; /* Espacio interno */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el formulario */
+            width: 300px; /* Ancho fijo */
+            height: 400px;
+            color: white;
+            margin: auto;
+            margin-top: 6%;
+            z-index: 1;
+            text-align: center;
+    }
+
+   
+        /* ESTILO DEL CAMPO NUMERICO*/
+#inputNumero {
+    display: none;
+}
+
+/* ESTILO DEL CAMPO DE FECHA*/
+#inputFecha {
+    display: none;
+}
+input[type="submit"]{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #cdcfd1;
+        }
+

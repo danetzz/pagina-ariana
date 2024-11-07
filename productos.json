@@ -1,0 +1,63 @@
+[
+    {
+      "nombre": "eternal sunshine (standard cover) lp",
+      "precio": 33,
+      "stock": 20,
+      "imagen": "https://www.arianagrande.com/files/2024/01/AG_ALL-RETAIL-LP-1-1.png"
+    },
+    {
+      "nombre": "eternal sunshine (exclusive cover no. 1) lp",
+      "precio": 33,
+      "stock": 15,
+      "imagen": "https://www.arianagrande.com/files/2024/01/AG_D2C_LP_1.png"
+    },
+    {
+      "nombre": "eternal sunshine (exclusive cover no. 2) lp",
+      "precio": 33,
+      "stock": 10,
+      "imagen": "https://www.arianagrande.com/files/2024/01/eternal-sunshine-exclusive-cover-no.-2-lp-1.png"
+    },
+    {
+      "nombre": "eternal sunshine (exclusive cover no. 3) lp",
+      "precio": 33,
+      "stock": 0,
+      "imagen": "https://www.arianagrande.com/files/2024/02/AG_D2C_LP_3.png"
+    },
+    {
+      "nombre": "eternal sunshine (exclusive cover no. 4) lp",
+      "precio": 33,
+      "stock": 8,
+      "imagen": "https://www.arianagrande.com/files/2024/02/ag-4.png"
+    },
+    {
+      "nombre": "eternal sunshine (exclusive target cover) lp",
+      "precio": 33,
+      "stock": 0,
+      "imagen": "https://www.arianagrande.com/files/2024/01/AG_TARGET-LP-.png"
+    },
+    {
+      "nombre": "the boy is mine cd single",
+      "precio": 1.99,
+      "stock": 8,
+      "imagen": "https://i.scdn.co/image/ab67616d0000b2730f41d138987a79efce0f884c"
+    },
+    {
+      "nombre": "the boy is mine (with brandy, monica)- cd single",
+      "precio": 1.99,
+      "stock": 0,
+      "imagen": "https://i.scdn.co/image/ab67616d0000b273318479c9f214577c1e7077f6"
+    },
+    {
+      "nombre": "we cant be friends 7",
+      "precio": 14,
+      "stock": 8,
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/6/6d/WeCantBeFriendsArianaGrande.png"
+    },
+    {
+      "nombre": "positions vinyl",
+      "precio": 33,
+      "stock": 8,
+      "imagen": "https://i1.sndcdn.com/artworks-1PI65bozKcZcQMxj-7j8WRw-t500x500.jpg"
+    }
+  ]
+  
