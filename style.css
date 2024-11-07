@@ -493,6 +493,61 @@
     font-size: 70%;
 } 
 
+
+/*DISEÑO RESPONSIVE, ADAPTACION PARA PANTALLAS*/
+
+
+@media (max-width: 900px) {
+
+    .section #cartasHome {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
+        margin: auto;
+        margin-bottom: 10%;
+        width: 40%;
+
+    }
+
+    #videoClip {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #videoClip .text {
+        width: 70%;
+        margin: auto;
+    }
+
+    #videoClip a {
+       margin-top: 20px;
+    }
+
+    #videoClip .image {
+        margin-top: 10%;
+        width: 80%;
+       
+    }
+
+    #eternalsunshine, #positions , #thankunext {
+
+        width: 18%;
+        margin-left: 12%;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+
+}
+
+
+
+
 @media (max-width: 645px) {
     .cartasProductos {
         height: 60%;
