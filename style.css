@@ -1,5 +1,4 @@
 
-
 /*ESTILO GENERAL DE LA LANDING PAGE*/
 
     body {
@@ -675,6 +674,17 @@
 
 }
 
+@media (max-width: 750px)  {
+    #mensajeBienvenida{
+        width: 80%;
+    }
+
+    #mensajeBienvenida img{
+        width: 70%;
+    }
+
+}
+
 
 @media (max-width: 680px)  {
     .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
@@ -752,7 +762,11 @@
         font-size:12px;
     }
 
+    #mensajeBienvenida img{
+        width: 100%;
+    }
 
+  
 }
 
 
