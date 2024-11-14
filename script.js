@@ -254,5 +254,17 @@ document.getElementById('searchButton').addEventListener('click', async function
         lyricsDiv.innerHTML = '<p>Error al obtener la letra. Inténtalo de nuevo más tarde.</p>';
     }
   });
+
+
+ // RESPONSIVE MENÚ HAMBURGUESA
+  // Obtenemos los elementos
+const hamburger = document.getElementById('hamburgesa');
+const menuHamburguesa = document.getElementById('listadoHamburguesa');
+
+// Añadimos un evento al botón hamburguesa
+hamburger.addEventListener('click', () => {
+    menuHamburguesa.style.display= "block"; // Alternamos la clase 'show' para abrir/cerrar el menú
+});
+
   
 
