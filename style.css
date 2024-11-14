@@ -43,6 +43,14 @@
         color: #fff;
     }
 
+    body.light-mode #popupAnuncio{
+        background-color: white;
+    }
+
+    body.light-mode #popupAnuncio .cerrar{
+        color: #000;
+    }
+
     body.light-mode #modeToggle {
         color: black;
     }
@@ -77,6 +85,7 @@
         }
 
         #mensajeBienvenida {
+            width: 80%;
             display: none; /* Inicialmente oculto */
             position: fixed;
             top: 50%;
@@ -112,7 +121,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1002;
-            width: 500px;
+            width: 90%;
         }
 
         #popupAnuncio .cerrar {
@@ -129,6 +138,8 @@
             height: 420px;
             background-image: url(https://www.neo2.com/wp-content/uploads/2023/04/ariana-grande-rem-beauty_03.jpg);
             background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: auto;
+            justify-content: center;
         }
 
         #popupAnuncio #popupImagen #popupTexto {
@@ -171,23 +182,25 @@
 
         }
 
+
+
+
           /* ESTILO DE LA SECCION 1 */
 
         .fondo-imagen {
             position: relative;
-            width: 100%;
+            width: 90%;
             height: 100vh;
             background-image: url(https://www.rollingstone.com/wp-content/uploads/2024/01/ariana-grande-new-press.jpg?crop=0px%2C14px%2C1800px%2C1014px&resize=1600%2C900); /* Ruta a tu imagen */
             background-size: cover; /* Ajusta la imagen para cubrir todo el div */
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
+            margin: auto;
         }
         .fondo-imagen #contenido {
-            height: 50%;
-            margin-left: 8%;
-            margin-top: 18%;
-            width: 30%;
+            margin-left: 40px;
+            margin-top: 40%;
         }
 
         .fondo-imagen #contenido h1{
@@ -201,7 +214,7 @@
         /*ESTILO BOTON CAMBIO DE COLOR*/
 
         #modeToggle {
-            margin-left: 95%;
+            margin-left: 2%;
             background: transparent;
             color: white;
             border: none;
@@ -280,21 +293,26 @@
 
     #cancionAPIS {
         margin: auto;
+        margin-top: 5%;
+        justify-content: center;
     }
 
     #cancionAPIS  h2{
-        margin-left: 42%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;
        
 
     }
 
     #cancionAPIS  input {
-        margin-left: 40%;
+        margin-left: 30%;
         padding: 12px 20px;
         font-size: 16px;
         border: 2px solid #ddd;
         border-radius: 13px;
-        width: 10%;
+        width: 30%;
         outline: none;
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
         
@@ -312,6 +330,7 @@
 
     }
 
+   
     #cancionAPIS #searchButton:hover{
         background-color: #cdcfd1;
 
@@ -322,6 +341,7 @@
         width: 50%;
         text-align: center;
         margin: auto;
+        
         
     }
 
@@ -390,16 +410,6 @@
             font-size: 1rem;
             padding: 4px;
         }
-
-       /* footer #redes ul {
-            list-style: none;
-        }
-
-
-        footer #redes ul li {
-            color: white;
-            text-decoration: none;
-        }*/
 
         footer ul li a:hover {
             color: rgb(210, 208, 208);
@@ -493,9 +503,74 @@
     font-size: 70%;
 } 
 
+#hamburguesa{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
 
-/*DISEÑO RESPONSIVE, ADAPTACION PARA PANTALLAS*/
+#listadoHamburguesa {
+    display: none; /* Ocultamos el menú por defecto */
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu nav */
+    left: 0;
+    width: 100%;
+    background-color: red; /* Color de fondo del menú */
+    text-align: center;
+    z-index: 1000; /* Para que esté encima de otros elementos */
+}
 
+
+
+
+  /*DISEÑO RESPONSIVE, ADAPTACION PARA PANTALLAS*/
+
+
+
+  @media (min-width: 1250px) {
+    .fondo-imagen #contenido {
+        margin-left: 50px;
+        margin-top: 20%;
+    }
+
+  }
+
+
+  @media (max-width: 1250px){
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
+        height: 400px;
+
+    }
+
+  }
+
+  @media (max-width: 1200px){
+
+    .fondo-imagen #contenido {
+        margin-left: 40px;
+        margin-top: 55%;
+    }
+
+    
+
+  }
+
+  @media (max-width: 1000px){
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
+        height: 360px;
+
+    }
+
+    .fondo-imagen #contenido {
+        margin-left: 40px;
+        margin-top: 65%;
+    }
+
+    
+
+  }
+  
 
 @media (max-width: 900px) {
 
@@ -508,6 +583,7 @@
         margin: auto;
         margin-bottom: 10%;
         width: 40%;
+        height: 450px;
 
     }
 
@@ -538,9 +614,94 @@
 
     }
 
+    .fondo-imagen #contenido {
+        margin-left: 50%;
+        margin-top: 25%;
+    }
+
+    #productosContainer {
+       flex-direction: column;
+       margin: auto;
+    }
+
+    .cartasProductos {
+        margin: auto;
+        width: 45%;
+        margin-top: 5%;
+        height: 50%;
+    }
+
+    .cartasProductos h3{
+        font-size: 18px;
+    }
+
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+
+    #hamburguesa{
+        display: block;
+    }
+    #listadoNav{
+        display: none;
+    }
+
+    footer #listado1{
+        margin: auto;
+        flex-direction: column;
+    }
+    footer #listado1 li{
+        padding: 4%;
+        justify-content: left;
+    }
+ 
+
+}
+
+@media (max-width: 810px){
+
+    #cancionAPIS  input {
+        margin-left: 25%;
+        width:40%;
+        
+
+    }
+
+
+    #cancionAPIS  #searchButton{
+        font-size: 12px;
+
+    }
+
+}
+
+
+@media (max-width: 680px)  {
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
+        margin-bottom: 10%;
+        width: 60%;
+        height: 550px;
+
+    }
+
+    #botonesAJAX {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botonesAJAX #eternalsunshine, #botonesAJAX #positions, #botonesAJAX #thankunext {
+        margin: auto;
+        width: 35%;
+        margin-bottom: 55px;
+    }
+
+    #cancionAPIS  #searchButton{
+        font-size: 10px;
+
+    }
+
+
+
 
 
 }
@@ -549,20 +710,52 @@
 
 
 @media (max-width: 645px) {
-    .cartasProductos {
-        height: 60%;
+    
+
+    footer #redes li {
+        width: 90%;
+    
     }
-    .cartasProductos img{
-        width: 100%;
-        height: 80%;
+
+    #mensajeBienvenida{
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
-    .cartasProductos p {
-        display: none;
-    }
-    .cartasProductos .stock {
-        display: none;
-    }
+
+
 }
+
+@media (max-width: 600px) {
+
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{
+        height: 460px;
+
+    }
+
+}
+
+
+
+@media (max-width: 500px){
+
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{   
+        width: 80%;
+        height: 500px;
+
+    }
+    .section h5{   
+       font-size: 18px;
+        
+    }
+
+    footer #listado1 li a{
+        font-size:12px;
+    }
+
+
+}
+
+
 @media (max-width: 480px) {
     .cartasProductos h3 {
         display: none;
@@ -572,3 +765,17 @@
         height: 100%;
     }
 }
+
+
+
+@media (max-width: 450px){
+
+    .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{   
+        height: 380px;
+
+    }
+    .section h5{   
+        display: none;
+
+    } 
+ }
