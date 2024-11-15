@@ -810,6 +810,8 @@
 
 
 
+
+
 @media (max-width: 450px){
 
     .section #cartasHome #cartaHome1, .section #cartasHome #cartaHome2, .section #cartasHome #cartaHome3, .section #cartasHome #cartaHome4{   
@@ -822,6 +824,8 @@
     } 
 
     #listadoHamburguesa {
-        margin-right: 10%;
+        margin-right: 6%;
+        width: 36%;
     } 
+
  }
