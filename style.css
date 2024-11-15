@@ -54,6 +54,10 @@
         color: black;
     }
 
+    body.light-mode  #productosContainer p{
+        color: black;
+    }
+
         /* ESTILO DIV DE CARGA*/
 
         #carga {
@@ -510,14 +514,27 @@
 }
 
 #listadoHamburguesa {
+    justify-content: center;
+    list-style-type: none;
     display: none; /* Ocultamos el menú por defecto */
     position: absolute;
+    right: 0;
     top: 60px; /* Ajusta según la altura de tu nav */
-    left: 0;
-    width: 100%;
-    background-color: red; /* Color de fondo del menú */
-    text-align: center;
-    z-index: 1000; /* Para que esté encima de otros elementos */
+    width: 20%;
+    background-color: black;
+    padding-bottom: 2%;
+}
+
+#listadoHamburguesa a{
+    color: white;
+    text-decoration: none;
+    width: 50%;
+    text-align: right;
+    
+}
+
+#listadoHamburguesa a:hover{
+    color: #cdcfd1;
 }
 
 
@@ -670,6 +687,14 @@
     #cancionAPIS  #searchButton{
         font-size: 12px;
 
+    }
+
+    #listadoHamburguesa {
+        width: 30%;
+    }
+
+    #listadoHamburguesa a{
+        font-size: 14px;
     }
 
 }
