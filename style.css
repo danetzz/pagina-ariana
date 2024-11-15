@@ -540,7 +540,7 @@
 
 
 
-  /*DISEÑO RESPONSIVE, ADAPTACION PARA PANTALLAS*/
+ /*DISEÑO RESPONSIVE, ADAPTACION PARA PANTALLAS*/
 
 
 
@@ -790,6 +790,9 @@
     #mensajeBienvenida img{
         width: 80%;
     }
+    #listadoHamburguesa {
+        margin-right: 5%;
+    } 
 
   
 }
@@ -816,5 +819,9 @@
     .section h5{   
         display: none;
 
+    } 
+
+    #listadoHamburguesa {
+        margin-right: 10%;
     } 
  }
